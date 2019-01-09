@@ -1,0 +1,915 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+@prefix t: <t:>  # tbox namespace
+
+# here we enter the t-box information
+
+# here we have to model every thing which can occur in the real world
+# a comment explains it
+# we point to chipset to state how it looks
+
+
+t:treeLeft rdfs:subClassOf t:chip, t:chiphigh ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "18,11" .
+
+t:treeRight rdfs:subClassOf t:chip, t:chiphigh ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "19,11" .
+
+t:tree rdfs:subClassOf t:objectHorizontal;
+    t:chipList ( t:treeLeft t:treeRight ) .
+
+
+t:torch rdfs:subClassOf t:chip, t:light, t:nature ;
+    rdfs:comment "a portable means of illumination such as a piece of wood or cloth soaked in tallow and ignited." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "24,4" .
+
+t:rock rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "the solid mineral material forming part of the surface of the earth." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "27,1" .
+
+t:rockBlue rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "the solid mineral material forming part of the surface of the earth." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "28,1" .
+
+t:rockBroken rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "the solid mineral material forming part of the surface of the earth." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "29,1" .
+
+t:water rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "a colourless, transparent, odourless, liquid which forms the seas, lakes, rivers." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "1,4" .
+
+t:fountain rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "an ornamental structure in a pool or lake from which one or more jets of water are pumped into the air." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "27,2" .
+
+t:signpost rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "a sign giving information such as the direction and distance to a nearby town, typically found at a road junction." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "26,3" .
+
+# roof
+
+t:roofRed rdfs:subClassOf t:chip ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "13,15" .
+
+t:roofBrown rdfs:subClassOf t:chip ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "12,15" .
+
+
+# floor =====================================================
+
+t:shortGras rdfs:subClassOf t:chip, t:nature, t:floor, t:districtFloor ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "1,10" .
+
+t:longGras rdfs:subClassOf t:chip, t:nature, t:floor, t:districtFloor ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "4,10" .
+
+t:soil rdfs:subClassOf t:chip, t:nature, t:floor ;
+    rdfs:comment "the upper layer of earth in which plants grow." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "7,2" .
+
+t:soilHard rdfs:subClassOf t:chip, t:nature, t:floor, t:districtFloor ;
+    rdfs:comment "the upper layer of earth in which plants grow." ;
+    t:resource <res:/chipset/Dungeon.png> ;
+    t:resourceLocation "1,14" .
+
+t:soilHardBlue rdfs:subClassOf t:chip, t:nature, t:floor ;
+    rdfs:comment "the upper layer of earth in which plants grow." ;
+    t:resource <res:/chipset/Dungeon.png> ;
+    t:resourceLocation "7,6" .
+
+t:soilDark rdfs:subClassOf t:chip, t:nature, t:floor, t:districtFloor ;
+    rdfs:comment "the upper layer of earth in which plants grow." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "13,10" .
+
+t:sand rdfs:subClassOf t:chip, t:nature, t:floor ;
+    rdfs:comment "a loose granular substance, typically pale yellowish brown, resulting from the erosion of siliceous and other rocks." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "10,2" .
+
+t:sandBeach rdfs:subClassOf t:chip, t:nature, t:floor ;
+    rdfs:comment "a loose granular substance, typically pale yellowish brown, resulting from the erosion of siliceous and other rocks." ;
+    t:resource <res:/chipset/Ship.png> ;
+    t:resourceLocation "1,10" .
+
+t:woodFloor rdfs:subClassOf t:chip, t:floor, t:houseFloor ;
+    rdfs:comment "the lower surface of a room, on which one may walk." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "12,3" .
+
+t:woodFloorSmooth rdfs:subClassOf t:chip, t:floor, t:houseFloor ;
+    rdfs:comment "the lower surface of a room, on which one may walk." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "19,4" .
+
+t:cobblestoneLarge rdfs:subClassOf t:chip, t:nature, t:floor  ;
+    rdfs:comment "a small round stone used to cover road surfaces." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "12,4" .
+
+t:cobblestoneSmall rdfs:subClassOf t:chip, t:nature, t:floor  ;
+    rdfs:comment "a small round stone used to cover road surfaces." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "13,4" .
+
+t:darkStoneFloor rdfs:subClassOf t:chip, t:nature, t:floor, t:districtFloor ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "12,6" .
+
+t:pebbles rdfs:subClassOf t:chip, t:nature, t:floor ;
+    rdfs:comment "a small stone made smooth and round by the action of water or sand." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "13,8" .
+
+t:stoneWayLight rdfs:subClassOf t:chip, t:floor ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Outline.png> ;
+    t:resourceLocation "12,9" .
+
+t:stoneWayDark rdfs:subClassOf t:chip, t:floor ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Outline.png> ;
+    t:resourceLocation "13,9" .
+
+
+t:stoneWayGray rdfs:subClassOf t:chip, t:floor ;
+    rdfs:comment "" ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "12,5" .
+
+# wall ========================================================
+
+t:brickWallAncient rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "12,5" .
+
+t:brickWallOld rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "15,0" .
+
+t:brickWallOldDark rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "15,1" .
+
+t:brickWallLight rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "15,4" .
+
+t:brickWallDark rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "15,5" .
+
+t:brickWallPurple rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "15,10" .
+
+t:brickWallPurpleDark rdfs:subClassOf t:chip, t:wall ;
+    rdfs:comment "a wall made of small rectangular block typically made of fired or sun-dried clay, used in building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "15,11" .
+
+t:smallTree rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "a woody perennial plant, typically having a single stem." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "19,8" .
+
+t:cactus rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "a succulent plant with a thick fleshy stem which typically bears spines." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "19,9" .
+
+t:windowRoundLight rdfs:subClassOf t:chip, t:window ;
+    rdfs:comment "an opening in the wall or roof of a building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "24,6" .
+
+t:windowDark rdfs:subClassOf t:chip, t:window ;
+    rdfs:comment "an opening in the wall or roof of a building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "25,6" .
+
+t:windowCurtains rdfs:subClassOf t:chip, t:window ;
+    rdfs:comment "an opening in the wall or roof of a building." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "26,6" .
+
+t:woodPile rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a heap of wood laid or lying one on top of another." ;
+    t:resource <res:/chipset/Outline.png> ;
+    t:resourceLocation "19,11" .
+
+t:shrubberyRoses rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "an area in a garden planted with shrubs." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "18,9" .
+
+t:shrubbery rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "an area in a garden planted with shrubs." ;
+    t:resource <res:/chipset/Outline.png> ;
+    t:resourceLocation "19,9" .
+
+t:stump rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "the bottom part of a tree left projecting from the ground after most of the trunk has fallen or been cut down." ;
+    t:resource <res:/chipset/Outline.png> ;
+    t:resourceLocation "19,8" .
+
+t:bonfire rdfs:subClassOf t:chip, t:nature ;
+    rdfs:comment "a open-air fire." ;
+    t:resource <res:/chipset/Outline.png> ;
+    t:resourceLocation "21,12" .
+
+
+# ==============================================================================
+# objects in house
+
+
+# on surface objects
+
+t:flowerVase rdfs:subClassOf t:chip, t:decoration ;
+    rdfs:comment "a decorative container without handles." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "26,9" .
+
+t:flowerVaseRed rdfs:subClassOf t:chip, t:decoration ;
+    rdfs:comment "a decorative container without handles." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "18,9" .
+
+t:pot rdfs:subClassOf t:chip, t:roomKitchen ;
+    rdfs:comment "a rounded or cylindrical container, typically of metal, used for cooking." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "23,10" .
+
+t:candlestick rdfs:subClassOf t:chip, t:roomKitchen ;
+    rdfs:comment "a support or holder for one or more candles, typically one that is tall and thin." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "24,6" .
+
+t:book rdfs:subClassOf t:chip ;
+    rdfs:comment "a written or printed work consisting of pages glued or sewn together along one side and bound in covers." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "25,5" .
+
+# toilet
+
+t:washbasinWithMirror rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a basin, typically fixed to a wall or on a pedestal, used for washing one's hands and face." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "21,14" .
+
+
+t:toiletOpenedFront rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a fixed receptacle into which a person may urinate or defecate." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "22,13" .
+
+t:toiletClosedFront rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a fixed receptacle into which a person may urinate or defecate." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "23,15" .
+
+t:toiletOpenedSide rdfs:subClassOf t:chip, t:chiphigh, t:mustWallLeft ;
+    rdfs:comment "a fixed receptacle into which a person may urinate or defecate." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "23,13" .
+
+t:toilet rdfs:subClassOf t:objectSynset ;
+    t:synonym t:toiletOpenedFront , t:toiletClosedFront , t:toiletOpenedSide .
+
+
+t:bathtubHeadEmpty rdfs:subClassOf t:chip ;
+    rdfs:comment "a wide, open, deep, typically round container with a flat bottom." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "19,12" .
+
+t:bathtubBodyEmpty rdfs:subClassOf t:chip ;
+    rdfs:comment "a wide, open, deep, typically round container with a flat bottom." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "19,13" .
+
+t:bathtubEmpty rdfs:subClassOf t:objectVertical;
+    t:chipList ( t:bathtubHeadEmpty t:bathtubBodyEmpty ) .
+
+# store
+
+t:crate rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a slatted wooden case used for transporting goods." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "25,9" .
+
+t:barrel rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a cylindrical container bulging out in the middle, traditionally made of wooden staves with metal hoops round them." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "25,6" .
+
+t:bag rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a flexible container with an opening at the top, used for carrying things." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "21,15" .
+
+t:bucketWood rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a roughly cylindrical open container with a handle." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "25,11" .
+
+t:lamp rdfs:subClassOf t:chip, t:light ;
+    rdfs:comment "a device for giving light." ;
+    t:resource <res:/chipset/Ship.png> ;
+    t:resourceLocation "29,3" .
+
+t:vaseLarge rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a decorative container without handles." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "25,10" .
+
+t:stool rdfs:subClassOf t:chip, t:seat;
+    rdfs:comment "a seat without a back or arms." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "26,11" .
+
+# picture
+
+t:pictureLandscape rdfs:subClassOf t:chip, t:decoration, t:hovering, t:mustWallUp ;
+    rdfs:comment "a painting or drawing." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "24,5" .
+
+t:picturePerson rdfs:subClassOf t:chip, t:decoration, t:hovering, t:mustWallUp ;
+    rdfs:comment "a painting or drawing." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "25,5" .
+
+t:pictureHouse rdfs:subClassOf t:chip, t:decoration, t:hovering, t:mustWallUp ;
+    rdfs:comment "a painting or drawing." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "26,5" .
+
+t:picture rdfs:subClassOf t:objectSynset ;
+    t:synonym 
+        t:pictureLandscape , 
+        t:picturePerson , 
+        t:pictureHouse .
+
+
+t:cupboardWithDoors rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a recess or piece of furniture with a door and usually shelves, used for storage." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "29,9" .
+
+t:cupboardWithShelfs rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a recess or piece of furniture with a door and usually shelves, used for storage." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "28,9" .
+
+t:cupboardWithBooks rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a recess or piece of furniture with a door and usually shelves, used for storage." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "27,9" .
+
+t:cupboard rdfs:subClassOf t:objectSynset ;
+    t:synonym 
+        t:cupboardWithDoors , 
+        t:cupboardWithShelfs , 
+        t:cupboardWithBooks .
+
+t:oven rdfs:subClassOf t:chip, t:chiphigh, t:roomKitchen, t:light ;
+    rdfs:comment "an enclosed compartment, usually part of a cooker, for cooking and heating food." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "29,7" .
+
+t:clock rdfs:subClassOf t:chip, t:chiphigh, t:mustWallUp ;
+    rdfs:comment "a mechanical or electrical device for measuring time." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "29,13" .
+
+t:chestWood rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a large strong box, typically made of wood and used for storage or transport." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "20,12" .
+
+t:chestRed rdfs:subClassOf t:chip, t:roomStorage ;
+    rdfs:comment "a large strong box, typically made of wood and used for storage or transport." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "21,12" .
+
+t:mirror rdfs:subClassOf t:chip, t:chiphigh, t:roomBedroom, t:roomToilet ;
+    rdfs:comment "a surface, typically of glass coated with a metal amalgam, which reflects a clear image." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "29,11" .
+
+
+# door
+
+
+t:doorWood rdfs:subClassOf t:chip, t:chiphigh, t:door ;
+    rdfs:comment "a hinged, sliding, or revolving barrier at the entrance to a building or room." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "20,11" .
+
+t:doorPlanks rdfs:subClassOf t:chip, t:chiphigh, t:door ;
+    rdfs:comment "a hinged, sliding, or revolving barrier at the entrance to a building or room." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "21,11" .
+
+t:doorMetal rdfs:subClassOf t:chip, t:chiphigh, t:door ;
+    rdfs:comment "a hinged, sliding, or revolving barrier at the entrance to a building or room." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "22,11" .
+
+t:doorWoodMetal rdfs:subClassOf t:chip, t:chiphigh, t:door ;
+    rdfs:comment "a hinged, sliding, or revolving barrier at the entrance to a building or room." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "23,11" .
+
+# table
+
+t:tableCornered rdfs:subClassOf t:chip, t:levelSurface ;
+    rdfs:comment "a piece of furniture with a flat top and one or more legs, providing a level surface for eating, writing, or working at." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "28,12" .
+
+t:tableRound rdfs:subClassOf t:chip, t:levelSurface ;
+    rdfs:comment "a piece of furniture with a flat top and one or more legs, providing a level surface for eating, writing, or working at." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "26,10" .
+
+t:table rdfs:subClassOf t:objectSynset ;
+    t:synonym t:tableCornered , t:tableRound .
+
+
+# shelf
+
+t:shelfBalls rdfs:subClassOf t:chip, t:shelf, t:hovering, t:mustWallUp ;
+    rdfs:comment "a flat length of wood or rigid material, attached to a wall or forming part of a piece of furniture, that provides a surface for the storage or display of objects." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "25,4" .
+
+t:shelfPotion rdfs:subClassOf t:chip, t:shelf, t:hovering, t:mustWallUp ;
+    rdfs:comment "a flat length of wood or rigid material, attached to a wall or forming part of a piece of furniture, that provides a surface for the storage or display of objects." ;
+    t:resource <res:/chipset/Inner.png> ;
+    t:resourceLocation "20,10" .
+
+t:shelfThings rdfs:subClassOf t:chip, t:shelf, t:hovering, t:mustWallUp ;
+    rdfs:comment "a flat length of wood or rigid material, attached to a wall or forming part of a piece of furniture, that provides a surface for the storage or display of objects." ;
+    t:resource <res:/chipset/Ship.png> ;
+    t:resourceLocation "28,4" .
+
+t:shelf rdfs:subClassOf t:objectSynset ;
+    t:synonym t:shelfBalls , t:shelfPotion , t:shelfThings .
+
+# bed
+
+t:bedheadVertical rdfs:subClassOf t:chip, t:roomBedroom ;
+    rdfs:comment "an upright board or panel fixed at the head of a bed." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "24,12" .
+
+t:bedbodyVertical rdfs:subClassOf t:chip, t:roomBedroom ;
+    rdfs:comment "a piece of furniture for sleep or rest, typically a framework with a mattress." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "24,13" .
+
+t:bedVertical rdfs:subClassOf t:objectVertical , t:mustWallUp;
+    t:chipList ( t:bedheadVertical t:bedbodyVertical ) .
+
+t:bedheadHorizontal rdfs:subClassOf t:chip, t:roomBedroom ;
+    rdfs:comment "an upright board or panel fixed at the head of a bed." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "25,13" .
+
+t:bedbodyHorizontal rdfs:subClassOf t:chip, t:roomBedroom ;
+    rdfs:comment "a piece of furniture for sleep or rest, typically a framework with a mattress." ;
+    t:resource <res:/chipset/Basis.png> ;
+    t:resourceLocation "26,13" .
+
+t:bedHorizontal rdfs:subClassOf t:objectHorizontal, t:mustWallLeft;
+    t:chipList ( t:bedheadHorizontal t:bedbodyHorizontal ) .
+
+t:bed rdfs:subClassOf t:objectSynset ;
+    t:synonym 
+        t:bedHorizontal ,
+        t:bedVertical .
+
+
+
+# ===========================================
+# room configs
+
+t:roomEntrance rdfs:subClassOf t:room ;
+    t:mandatory t:clock ;
+    t:optional 
+        t:picture ,
+        t:flowerVase ,
+        t:flowerVaseRed ,
+        t:candlestick ,
+        t:vaseLarge ,
+        t:crate .
+        # t:lamp ,
+        # t:mirror .
+        
+t:roomKitchen rdfs:subClassOf t:room ;
+    t:mandatory t:oven , t:table ;
+    t:optional 
+        t:stool , 
+        t:picture , 
+        t:cupboard, 
+        t:shelf ,
+        t:table , 
+        t:crate ,
+        t:barrel ,
+        t:bag .
+
+t:roomBedroom rdfs:subClassOf t:room ;
+    t:mandatory t:bed , t:cupboard ;
+    t:optional 
+        t:picture , 
+        t:cupboard , 
+        t:mirror , 
+        t:shelf ,
+        t:table ,
+        t:chestWood ,
+        t:chestRed .
+
+
+t:roomToilet rdfs:subClassOf t:room ;
+    t:mandatory t:toilet , t:washbasinWithMirror ;
+    t:optional 
+        t:bathtubEmpty , 
+        t:picture , 
+        t:shelf , 
+        t:bucketWood, 
+        t:cupboard ,
+        t:stool .
+
+
+t:roomStore rdfs:subClassOf t:room ;
+    t:optional 
+        t:crate ,
+        t:barrel ,
+        t:bucketWood ,
+        t:bag ,
+        t:vaseLarge ,
+        t:chestWood ,
+        t:chestRed .
+
+
+# ================================
+# chars
+
+t:boy1 rdfs:subClassOf t:char, t:male, t:personYoung ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "0,0" .
+
+t:boy2 rdfs:subClassOf t:char, t:male, t:personYoung ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "0,0" .
+
+t:boy3 rdfs:subClassOf t:char, t:male, t:personYoung ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "0,0" .
+
+t:girl1 rdfs:subClassOf t:char, t:female, t:personYoung ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "1,0" .
+
+t:girl2 rdfs:subClassOf t:char, t:female, t:personYoung ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "1,0" .
+
+t:girl3 rdfs:subClassOf t:char, t:female, t:personYoung ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen1 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara1.png> ;
+    t:resourceLocation "0,0" .
+
+t:teen2 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara1.png> ;
+    t:resourceLocation "2,1" .
+
+t:teen3 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "0,0" .
+
+t:teen4 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "2,0" .
+
+t:teen5 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "0,1" .
+
+t:teen6 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara3.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen7 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara3.png> ;
+    t:resourceLocation "2,1" .
+
+t:teen8 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara4.png> ;
+    t:resourceLocation "0,0" .
+
+t:teen9 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara4.png> ;
+    t:resourceLocation "2,0" .
+
+t:teen10 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Crown1.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen11 rdfs:subClassOf t:char, t:male, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Crown3.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen12 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara1.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen13 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara1.png> ;
+    t:resourceLocation "3,1" .
+
+t:teen14 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen15 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "3,0" .
+
+t:teen16 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "1,1" .
+
+t:teen17 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "2,1" .
+
+t:teen18 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara2.png> ;
+    t:resourceLocation "3,1" .
+
+t:teen19 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara3.png> ;
+    t:resourceLocation "1,1" .
+
+t:teen20 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara3.png> ;
+    t:resourceLocation "3,1" .
+
+t:teen21 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara4.png> ;
+    t:resourceLocation "1,0" .
+
+t:teen22 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara4.png> ;
+    t:resourceLocation "0,1" .
+
+t:teen23 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara4.png> ;
+    t:resourceLocation "1,1" .
+
+t:teen24 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Chara4.png> ;
+    t:resourceLocation "2,1" .
+
+t:teen25 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Crown1.png> ;
+    t:resourceLocation "0,0" .
+
+t:teen26 rdfs:subClassOf t:char, t:female, t:personTeen ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Crown1.png> ;
+    t:resourceLocation "1,1" .
+
+t:middle1 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "2,0" .
+
+t:middle2 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "0,1" .
+
+t:middle3 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "2,0" .
+
+t:middle4 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "0,1" .
+
+t:middle5 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "2,0" .
+
+t:middle6 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "0,1" .
+
+t:middle7 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "0,0" .
+
+t:middle8 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "1,0" .
+
+t:middle9 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "2,0" .
+
+t:middle10 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "3,0" .
+
+t:middle11 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "0,1" .
+
+t:middle12 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "1,1" .
+
+t:middle13 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "2,1" .
+
+t:middle14 rdfs:subClassOf t:char, t:male, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Men1.png> ;
+    t:resourceLocation "3,1" .
+
+t:middle15 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "3,0" .
+
+t:middle16 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "1,1" .
+
+t:middle17 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "3,0" .
+
+t:middle18 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "1,1" .
+
+t:middle19 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "3,0" .
+
+t:middle20 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "1,1" .
+
+t:middle21 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "0,0" .
+
+t:middle22 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "1,0" .
+
+t:middle23 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "2,0" .
+
+t:middle24 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "3,0" .
+
+t:middle25 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "0,1" .
+
+t:middle26 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "1,1" .
+
+t:middle27 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "2,1" .
+
+t:middle28 rdfs:subClassOf t:char, t:female, t:personMiddle ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/Women1.png> ;
+    t:resourceLocation "3,1" .
+
+t:old1 rdfs:subClassOf t:char, t:male, t:personOld ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "2,1" .
+
+t:old2 rdfs:subClassOf t:char, t:male, t:personOld ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "2,1" .
+
+t:old3 rdfs:subClassOf t:char, t:male, t:personOld ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "2,1" .
+
+t:old4 rdfs:subClassOf t:char, t:female, t:personOld ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People1.png> ;
+    t:resourceLocation "3,1" .
+
+t:old5 rdfs:subClassOf t:char, t:female, t:personOld ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People4.png> ;
+    t:resourceLocation "3,1" .
+
+t:old6 rdfs:subClassOf t:char, t:female, t:personOld ;
+    rdfs:comment "" ;
+    t:resource <res:/charset/People5.png> ;
+    t:resourceLocation "3,1" .
