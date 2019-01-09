@@ -359,7 +359,7 @@ Still many things to do. If you want to contribute I would be happy. Currently (
     * natural death: graveyard with name
     * killed by monster: skeleton outside the city, contains a personal item a relative would like to have
 * Battle System to fight monsters hiding in rooms or outside the city
-* NPC dialog system using question & answering, e.g. "where is your father?", "do you know weakness against <monster>?", "do you have a <item>?", etc.
+* NPC dialog system using question & answering, e.g. "where is your father?", "do you know weakness against *monster*?", "do you have a *item*?", etc.
     * while in dialog time freezes, each question wastes one time unit
     * NPCs can stop dialog if they do not have time for you
 * NPC Manager executes day routines, NPCs have different randomly generated day routines
